@@ -1,0 +1,38 @@
+body
+{
+    margin: 25px 25px;
+    box-sizing: border-box;
+}
+
+.wrapper
+{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    /* justify-content: start; */
+    border: 2px solid black;
+}
+
+.strobe
+{
+    width: 100px;
+    height: 100%;
+    border-right: 2px dashed green;
+}
+
+.strobe:hover
+{
+    animation: color-change 1s ease-in-out alternate infinite;
+}
+
+@keyframes color-change
+{
+    from
+    {
+        background-color: white;
+    }
+    to
+    {
+        background-color: yellow;
+    }
+}
